@@ -22,8 +22,13 @@ const initialState = [
 const reducer = (state=initialState, action) => {
     switch (action.type) {
         case 'VOTE': {
-            const nowState = state[action.payload]
-            nowState.suara = nowState.suara + 1
+            // const nowState = state[action.payload]
+            // nowState.suara = nowState.suara + 1
+
+            return Object.assign(state, state[action.payload], {
+                nama: state[action.payload].nama,
+                suara: state[action.payload].suara++
+            })
         }
 
         default: {
