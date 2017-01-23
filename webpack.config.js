@@ -4,7 +4,7 @@ const validator = require('webpack-validator')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = validator({
-    entry: path.join(__dirname, 'src', 'main.js'),
+    entry: path.join(__dirname, 'src', 'index.js'),
 
     output: {
         path: path.resolve(__dirname, 'public'),
