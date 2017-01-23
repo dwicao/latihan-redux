@@ -46,6 +46,9 @@ class Apps extends React.Component {
         )
     }
 }
+
+// Ini awalnya mau pake SFC, cuma gak tau gimana cara ngitung reduce di sini mas
+//
 // const _handleClick = (i) => {
 //     store.dispatch({
 //         type: 'VOTE',
